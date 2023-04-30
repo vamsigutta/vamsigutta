@@ -3,6 +3,12 @@ languageCode: en-us
 title: Vamsi Gutta
 
 theme: PaperMod
+enableRobotsTXT: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
 enableEmoji: true
 menu:
   main:
@@ -20,6 +26,17 @@ menu:
       weight: 30
 
 params:
+  env: production
+  defaultTheme: auto
+  
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+
+  keywords: [Blog, Portfolio, development, Machine learning]
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: "Welcome to my blog, I'm an enthusiastic tech developer :man_technologist: with expertise in Python and JavaScript. Passionate about AI and building innovative products, I expand my skill set to stay ahead of the curve. I enjoy sharing knowledge through blogging and engaging with like-minded individuals in the tech community. Let's shape the future together!"
