@@ -1,0 +1,34 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Vamsi Gutta
+
+theme: PaperMod
+enableEmoji: true
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: Archives
+      name: Archives
+      url: /archives/
+      weight: 30
+
+params:
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: "Welcome to my blog, I'm an enthusiastic tech developer :man_technologist: with expertise in Python and JavaScript. Passionate about AI and building innovative products, I expand my skill set to stay ahead of the curve. I enjoy sharing knowledge through blogging and engaging with like-minded individuals in the tech community. Let's shape the future together!"
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/Vamsi_235"
+    - name: github
+      url: "https://github.com/vamsigutta"
+    - name: buymeacoffee
+      url: "https://www.buymeacoffee.com/vamsigutta"
+
