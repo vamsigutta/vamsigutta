@@ -35,7 +35,7 @@ These tools are opening up a whole new level of interaction with AI, making it m
 
 MCP uses a **client-server architecture**. In this setup, *clients* (like IDEs or any app that can talk to LLMs) connect to *servers* that offer specific capabilities—things like accessing local files or calling external APIs. This structure helps organize communication and manage functionality in a clean, efficient way.
 
-![mcp-block-diagram](/content/static/images/mcp.jpg)
+![mcp-block-diagram](./images/mcp.jpg)
 
 As shown in the block diagram, a client can connect to multiple MCP servers. Each connection follows a **1:1 relationship** and uses **JSON-RPC** for communication. The current version of the protocol supports interaction over **stdio** and **HTTP using Server-Sent Events (SSE)**.
 
