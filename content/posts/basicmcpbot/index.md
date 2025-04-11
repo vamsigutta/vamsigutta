@@ -20,7 +20,7 @@ Function Calling is a way to connect tools or custom code to a large language mo
 
 Well, on their own, LLMs can only generate text, they can’t directly trigger actions or run code. That’s where frameworks come in. These frameworks act as a bridge between the LLM and the tools you want to use.
 
-Here’s how it works: you provide some metadata about the tools (like the function name, parameters, and description) which is passed as context to the model. Based on this info and the user's query, the LLM generates a special output that *looks* like a function call with the right parameters. The framework then takes that output and actually runs the function.
+**Here’s how it works**: you provide some metadata about the tools (like the function name, parameters, and description) which is passed as context to the model. Based on this info and the user's query, the LLM generates a special output that *looks* like a function call with the right parameters. The framework then takes that output and actually runs the function.
 
 Not all LLMs can do this, only those that are specifically trained to support function calling. And there are some popular frameworks out there that make this integration easier, like:
 
@@ -50,7 +50,7 @@ Here’s how the typical workflow goes:
 
 Let us start by defining an MCP server with two tools for simplicity. One of the tool fetches the supported kubernetes and openshift versions from ibmcloud. The other one will be a simple addition tool which takes in two integers and returns the added output.
 
-Considering that most of the blogs are focusing on the `STDIO`, let us see how we can work non `SSE`. The below is an example of a server code. 
+Considering that most of the blogs are focusing on the `STDIO`, let us see how we can work on `SSE`. The below is an example of a server code. 
 
 ```python
 from mcp.server.fastmcp import FastMCP
@@ -188,3 +188,14 @@ While MCP offers a lot of advantages, it’s also important to be aware of the c
 LLMs have evolved from being simple chat tools that could only share pre-trained information to powerful systems capable of taking action based on user needs. The next big step in this journey is adopting **agentic frameworks** built on top of protocols like **MCP**. In this setup, agents can intelligently break down a user’s query into smaller tasks and perform the necessary actions using integrated tools and data sources.
 
 This shift isn’t just about improving what LLMs *can* do, it’s about reshaping how we build AI-powered applications altogether. With agentic designs and standardized protocols like MCP, we’re moving toward a future where AI systems can reason, act, and adapt—bringing us closer to truly intelligent assistants.
+
+## References
+
+- [Model context protocol official documentation](https://modelcontextprotocol.io/introduction)
+- [Python SDK for MCP](https://github.com/modelcontextprotocol/python-sdk)
+- [Langchain MCP adapters](https://github.com/langchain-ai/langchain-mcp-adapters)
+
+## Explore More
+
+- [MCP Servers](https://github.com/modelcontextprotocol/servers/tree/main)
+- [Community build MCP servers](https://mcpservers.org/category/development)
